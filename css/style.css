@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{font-family: "Oswald", sans-serif;}
+
+/* Alinear los objetos, el logo y el titulo a la izquierda y la lista a la derecha*/
+header{
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(78, 68, 68) 22%, rgb(0, 0, 0) 70%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    overflow: hidden;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+header a:hover{
+    background-color: rgb(0, 16, 109);
+}
+
+ /*Mover la imagen y el titulo*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del tamaño y posicion de la imagen */
+.logo > img{
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+/*  TAMAÑO DE TEXTO */
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2.7em;}
+p{ font-size: 1.25em;}
+h1,h2,h1,p,h3{font-family: sans-serif;}
+        
+/* BOTONES */
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: rgb(0, 16, 109);
+    border: 2px solid black;
+    color: white;
+    margin-top: 70px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(36, 99, 215);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+        
+button:hover{
+  background-color: rgb(121,9,9);
+}
+        
+/* codigo del encabezado principal */
+#free{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://i.blogs.es/6449f7/espinof-peliculas-mas-esperadas-estrenos-cine-2018/1366_2000.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#free h1{
+  color: white;
+}
+
+#free button{
+  font-size: 1.75em;
+}
+#videopres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://humanidades.com/wp-content/uploads/2019/02/cine-5-e1585960007845.jpg");
+}
+
+
+        
+/*  SECCION DE PELICULAS */
+#nuestros-programas{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://thumbs.dreamstime.com/b/pasillo-oscuro-vac%C3%ADo-del-cine-con-los-asientos-c%C3%B3modos-en-luz-azul-ci%C3%A9rrese-para-arriba-las-filas-asiento-sala-de-142259945.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+/* Seccion de series */
+#series{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://images7.alphacoders.com/115/1152297.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+/* Seccion de anime */
+#anime{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://w0.peakpx.com/wallpaper/83/791/HD-wallpaper-anime-landscape-cityscape-scenic-sunset-anime-girl-anime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .contenedor, #series .contenedor, #anime .contenedor{
+    padding: 150px 20px;
+}
+        
+#nuestros-programas h2, #series h2, #anime h2{
+  margin-top: -85px;
+  margin-bottom: 40px;
+  font-size: 3.2em;
+}
+        
+#nuestros-programas p, #series p, #anime p{
+  display: block;
+ /* margin-bottom: 80px; */
+}
+        
+/* Alinear los contenedores uno al lado del otro */
+#nuestros-programas .programas, #series .programas, #anime .programas{
+  display: flex;
+  justify-content: center;
+}
+
+#nuestros-programas .columna, #series .columna_dos, #anime .columna_tres{
+  padding: 50px;
+  margin: 30px;
+  border-radius: 15px;
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  background-color: #0a141d;
+  box-shadow: 2px 2px 10px rgb(36, 99, 215);
+  width: 40%;
+}
+        
+/*Estos códigos de CSS permiten incluir una imagen detrás de la caja a la que
+  pertenece cada uno. Además tiene un linear-gradient que opaca un poco las
+  imágenes con respecto al color indicado*/
+.columna:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3OD2XV2NG5HLJOPFDHNPS3CUII.jpeg");
+}
+        
+.columna:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://www.xtrafondos.com/wallpapers/resized/pelicula-pixels-1933.jpg?s=large");
+}
+
+.columna:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://i.ytimg.com/vi/01q5Qd7kKM8/maxresdefault.jpg");
+}
+
+.columna_dos:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://ae01.alicdn.com/kf/HTB1LmoAHFXXXXbIXFXXq6xXFXXXq/Env-o-libre-Juego-de-Tronos-Minimalismo-Custom-PRINT-ARTE-de-la-Seda-Cartel-de-la.jpg");
+}
+          
+.columna_dos:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://occ-0-1360-769.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXErLwqyljXtI6mMH6VMnF6B1L4085vOdGb62ZhaqZTL04oFjCUhzdkkK434vs50cKZVHoPJ2pNc-JY4dSw0UoyBRAZiD7sNADpJ.jpg?r=615");
+}
+  
+.columna_dos:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://fondosmil.com/fondo/27056.jpg");
+}
+
+.columna_tres:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://p325k7wa.twic.pics/high/seven-deadly-sins/seven-deadly-sins/00-page-setup/sds_game-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80");
+}
+          
+.columna_tres:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://i.blogs.es/04ac6a/2560_3000/1366_2000.jpeg");
+}
+  
+.columna_tres:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://as01.epimg.net/meristation/imagenes/2020/05/29/noticias/1590777254_943497_1590777292_noticia_normal.jpg");
+}
+
+.columna p, .columna_dos p, .columna_tres p{
+    margin-top: 20%;
+}
+
+.columna h3, .columna_dos h3, .columna_tres h3{
+    height: 20%;
+}
+
+.contenedor .programas a{
+    text-decoration: none;
+}
+
+/* Ajustes del pie de pagina */
+footer{
+    background-color: rgba(70,70,70);
+    padding: 50px 0 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+.partFooter{
+    width: 22%;
+    text-align: center;
+
+}
+.partFooter img{
+    width: 60%;
+}
+.partFooter h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #0f088e;
+    padding: 5px 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.contact{
+    margin: 10px;
+    display: block;
+    text-align: left;
+
+}
+.contact > i{
+    float: left;
+    margin: 0 0 0 10px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+
+}
+.contact > p{
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.partFooter > a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.partFooter > a:hover{
+    background-color: #270989;
+    border-color: #ffffff;
+    border-radius: 5px;
+    transition: all ease-in-out 0.6s;
+}
+
+.social-media > a >i{
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+    border-radius: 50%;
+    
+}
+.social-media > a > i:hover{
+    background-color: #290b8d;
+    border-color: #ffffff;
+}
