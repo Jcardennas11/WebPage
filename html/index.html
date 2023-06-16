@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="../css/form.css">
+</head>
+<body>
+		<div class="contenedor">
+			<form action="ejemplo.php" method="post" class="formulario" autocomplete="off">
+				<div class="form-header">
+					<h1 class="titulo">Registro</h1>
+  			<label for="nombres" class="formlabel"></label> 
+  			<input   class="formai" placeholder="Nombres" type="text" name="nombre" maxlength="30 " required="true">
+  			
+  			<label for="apellidos" class="formapellidos"></label> 
+  			<input type="text" name="apellidos" class="formaapellidos" placeholder="Apellidos" maxlength="50" required="true">
+  			
+  			<label for="telefono" class="formlabel"></label>
+  			<input type="text" name="telefono" class="formai" placeholder="Telefono" maxlength="12" required="true">
+  			
+  			<label for="tipo de documento" class="formapellidos">Tipo de documento: 
+  			<input type="radio" name="hm" value="ti" >T.I
+  			<input type="radio" name="hm" value="cc" >C.C 
+            <input type="text" name="documento" class="formai" placeholder="Documento" maxlength="12" required="true">
+             
+  			</label>
+
+ 			<label for="fecha de nacimiento" class="formlabel">Fecha de nacimiento: 
+ 			<input type="date" class="formai"></label>
+ 			
+			<label for="correo" class="formlabel"></label> 
+			<input type="email" name="correo" class="formai" placeholder="Correo electronico" maxlength="50">
+			
+			<label for="contraseña" class="formapellidos"></label> 
+			<input type="password" class="formaapellidos" placeholder="Contraseña" maxlength="30">
+  			
+  			<label for="sexo" class="sexo">Sexo:     
+   	 		<input type="radio" name="hm" value="h" > Hombre
+    		<input type="radio" name="hm" value="m" > Mujer
+    		</label>
+  			
+  			
+  			
+  			<label for="terminos y condiciones" class="terminos"><input type="checkbox" > Acepto terminos y condiciones</label>
+  			
+    		<input type="submit" value="Enviar" class="boton" >
+    		
+  			
+  			</div>
+			</form>
+			<div id="error"></div>
+		</div>
+</body>
+</html>

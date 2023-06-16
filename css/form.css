@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background: url('../img/fondoFormulario.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+.contenedor .formulario .form-header .titulo{
+	font-weight: normal;
+	font-family: Trebuchet MS;
+	color: #3C6AFF;
+	text-align: center;
+	padding: 15px 0;
+}
+.contenedor .formulario .form-header .titulo span {
+	color: #2458FF;
+}
+.contenedor .formulario {
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(5px);
+	background: rgba(243, 243, 243, 0.6);
+	width: 50%;
+	max-width: 600px;
+	margin: auto;
+	padding: 0px 35px;
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 7px;
+}
+.contenedor .formulario .formlabel {
+	display: block;
+	color: #3C6AFF;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	position: relative;
+}
+.contenedor .formulario .formai{
+	background: rgba(0,0,0,#FFFFFF);
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #3C6AFF;
+	width: 49.5%;
+	padding: 12px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #000000;
+	font-family: Trebuchet MS;
+}
+.contenedor .formulario .formt{
+	background: rgba(0,0,0,#FFFFFF);
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #3C6AFF;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #000000;
+	font-family: Trebuchet MS;
+}
+.contenedor .formulario .formt{
+	resize: vertical;
+	max-height: 100px;
+	min-width: 30px;
+}
+.contenedor .formulario .boton{
+	width: 49.5%;
+	font-family: Trebuchet MS;
+	outline: none;
+	background: #3C6AFF;
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	padding: 12px 0;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.contenedor .formulario .boton:hover{
+	background: #ACC1FF;
+}
+.contenedor .formulario .formapellidos {
+	
+	color: #3C6AFF;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	position: relative;
+}
+.contenedor .formulario .formaapellidos, .formt{
+	background: rgba(0,0,0,#FFFFFF);
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #3C6AFF;
+	width: 49.5%;
+	padding: 12px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #000000;
+	font-family: Trebuchet MS;
+}
+.sexo{
+	margin-bottom: 12px;
+	display: block;
+	color: #3C6AFF;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	position: relative;
+}
+.terminos{
+	margin-bottom: 20px;
+	display: block;
+	color: #3C6AFF;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	position: relative;
+}
